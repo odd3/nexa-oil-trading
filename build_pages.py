@@ -1,5 +1,5 @@
 # -*- coding: utf-8 -*-
-"""Page content for Nexa Oil Trading."""
+"""Page content for Nexa Oil."""
 
 def run(g):
     page = g["page"]; ic = g["ic"]; IMG = g["IMG"]
@@ -26,7 +26,7 @@ def run(g):
       '<div class="container">'
       '<span class="eyebrow reveal">Dubai · International Energy Trading</span>'
       '<h1 class="reveal d1">Powering Global Energy Trade</h1>'
-      '<p class="lead reveal d2">Nexa Oil Trading is a Dubai-based international energy trading company '
+      '<p class="lead reveal d2">Nexa Oil is a Dubai-based international energy trading company '
       'specializing in the supply of premium crude oil and industrial lubricants sourced from trusted '
       'Middle Eastern producers.</p>'
       '<div class="btn-row reveal d3">'
@@ -118,18 +118,18 @@ def run(g):
     home_body = hero + why + stat_strip + products_overview + network + trust + cta_band()
     page("index.html",
          "International Energy Trading from Dubai",
-         "Nexa Oil Trading is a Dubai-based international energy trading company supplying premium crude oil and industrial lubricants worldwide under FOB, CIF and CFR terms.",
+         "Nexa Oil is a Dubai-based international energy trading company supplying premium crude oil and industrial lubricants worldwide under FOB, CIF and CFR terms.",
          home_body, "index.html", solid=False)
 
     # ============================================================= ABOUT
     about_body = (
-      page_hero("About Nexa Oil Trading","Trading energy the world relies on",
+      page_hero("About Nexa Oil","Trading energy the world relies on",
         "A Dubai-headquartered trader, broker and distributor connecting trusted Middle Eastern producers with buyers across five continents.",
         IMG["dubai"], "<span>About Us</span>")
       + '<section class="section"><div class="container"><div class="split">'
         '<div class="reveal"><span class="eyebrow">Who We Are</span>'
         '<h2>Rooted in the Gulf, active across the globe</h2>'
-        '<p>Nexa Oil Trading is an international energy trading company based in Dubai, United Arab Emirates. '
+        '<p>Nexa Oil is an international energy trading company based in Dubai, United Arab Emirates. '
         'Operating as a trader, broker and distributor, we specialise in the worldwide supply of premium crude oil and '
         'a full range of high-performance industrial lubricants.</p>'
         '<p>Our position in the UAE — at the crossroads of European, Asian and African trade — allows us to move product '
@@ -167,7 +167,7 @@ def run(g):
       + cta_band()
     )
     page("about.html","About Us",
-         "Learn about Nexa Oil Trading — a Dubai-based international energy trading company connecting trusted Middle Eastern producers with buyers across five continents.",
+         "Learn about Nexa Oil — a Dubai-based international energy trading company connecting trusted Middle Eastern producers with buyers across five continents.",
          about_body, "about.html")
 
     # ============================================================= PRODUCTS
@@ -210,7 +210,7 @@ def run(g):
       + cta_band()
     )
     page("products.html","Products",
-         "Explore Nexa Oil Trading's portfolio of premium crude oil and industrial lubricants — engine, hydraulic, gear, compressor and marine oils, plus greases — traded under FOB, CIF and CFR.",
+         "Explore Nexa Oil's portfolio of premium crude oil and industrial lubricants — engine, hydraulic, gear, compressor and marine oils, plus greases — traded under FOB, CIF and CFR.",
          products_body, "products.html")
 
     # ============================================================= CRUDE OIL
@@ -220,7 +220,7 @@ def run(g):
         IMG["rig"], '<a href="products.html">Products</a> <span>/</span> Crude Oil')
       + '<section class="section"><div class="container"><div class="split">'
         '<div class="reveal"><span class="eyebrow">Overview</span><h2>Reliable crude supply from the Gulf</h2>'
-        '<p>Nexa Oil Trading trades premium Middle Eastern crude oil drawn from established regional producers. '
+        '<p>Nexa Oil trades premium Middle Eastern crude oil drawn from established regional producers. '
         'Our cargoes feed refineries and petrochemical complexes that demand consistent quality, secure volume '
         'and dependable delivery.</p>'
         '<p>We structure every transaction around the buyer\'s preferred Incoterm — whether you load at origin (FOB) '
@@ -259,7 +259,7 @@ def run(g):
       + cta_band()
     )
     page("crude-oil.html","Crude Oil",
-         "Premium Middle Eastern crude oil — light, medium and heavy grades — supplied by Nexa Oil Trading under FOB, CIF and CFR terms for refineries and petrochemicals.",
+         "Premium Middle Eastern crude oil — light, medium and heavy grades — supplied by Nexa Oil under FOB, CIF and CFR terms for refineries and petrochemicals.",
          crude_body, "crude-oil.html")
 
     # ============================================================= LUBRICANTS
@@ -303,7 +303,7 @@ def run(g):
       + cta_band()
     )
     page("lubricants.html","Industrial Lubricants",
-         "Nexa Oil Trading supplies high-performance industrial lubricants — engine, hydraulic, gear, compressor and marine oils, plus greases — for industry, marine and heavy equipment worldwide.",
+         "Nexa Oil supplies high-performance industrial lubricants — engine, hydraulic, gear, compressor and marine oils, plus greases — for industry, marine and heavy equipment worldwide.",
          lub_body, "lubricants.html")
 
     # ============================================================= GLOBAL NETWORK
@@ -341,7 +341,7 @@ def run(g):
       + cta_band()
     )
     page("global-network.html","Global Supply Network",
-         "Discover Nexa Oil Trading's global supply network — based in Dubai with efficient logistics and international shipping coordination to Europe, Asia, Africa and the Americas.",
+         "Discover Nexa Oil's global supply network — based in Dubai with efficient logistics and international shipping coordination to Europe, Asia, Africa and the Americas.",
          gn_body, "global-network.html")
 
     # ============================================================= INDUSTRIES
@@ -377,7 +377,7 @@ def run(g):
       + cta_band()
     )
     page("industries.html","Industries We Serve",
-         "Nexa Oil Trading serves oil & gas, marine, manufacturing, construction, mining, logistics, energy and heavy industry with crude oil and industrial lubricants worldwide.",
+         "Nexa Oil serves oil & gas, marine, manufacturing, construction, mining, logistics, energy and heavy industry with crude oil and industrial lubricants worldwide.",
          ind_body, "industries.html")
 
     # ============================================================= QUALITY
@@ -411,7 +411,7 @@ def run(g):
       + cta_band()
     )
     page("quality.html","Quality & Compliance",
-         "Nexa Oil Trading upholds rigorous quality and compliance — recognised specifications, full documentation, independent inspection, sanctions screening and responsible trading.",
+         "Nexa Oil upholds rigorous quality and compliance — recognised specifications, full documentation, independent inspection, sanctions screening and responsible trading.",
          q_body, "quality.html")
 
     # ============================================================= CATALOG
@@ -435,7 +435,7 @@ def run(g):
         "Browse our product range online or download the full PDF catalog with specifications, packaging and trade conditions.",
         IMG["barrels"], "<span>Catalog</span>")
       + '<section class="section"><div class="container"><div class="split">'
-        '<div class="reveal"><span class="eyebrow">Download</span><h2>The complete Nexa Oil Trading catalog</h2>'
+        '<div class="reveal"><span class="eyebrow">Download</span><h2>The complete Nexa Oil catalog</h2>'
         '<p>Our PDF catalog brings together product descriptions, technical specifications, packaging information and '
         'trade conditions for our full crude oil and lubricants range — everything your procurement team needs in one place.</p>'
         '<ul class="feat-list" style="margin:24px 0">'
@@ -456,14 +456,14 @@ def run(g):
       + cta_band()
     )
     page("catalog.html","Catalog",
-         "Download the Nexa Oil Trading PDF catalog or browse online product sheets — technical specifications, packaging information and trade conditions for crude oil and lubricants.",
+         "Download the Nexa Oil PDF catalog or browse online product sheets — technical specifications, packaging information and trade conditions for crude oil and lubricants.",
          cat_body, "catalog.html")
 
     # ============================================================= NEWS
     news = [
         (IMG["news1"],"Market Update","Gulf crude differentials firm as Asian demand recovers",
          "Refining margins in Asia strengthened through the quarter, lifting demand for Middle Eastern medium and heavy grades and tightening prompt availability."),
-        (IMG["news2"],"Company News","Nexa Oil Trading expands lubricants distribution into West Africa",
+        (IMG["news2"],"Company News","Nexa Oil expands lubricants distribution into West Africa",
          "New distributor agreements extend our marine and industrial lubricants reach across key West African ports, shortening lead times for regional buyers."),
         (IMG["news3"],"Logistics","UAE port throughput supports faster turnaround on parcel cargoes",
          "Continued investment in UAE terminal capacity is helping traders compress loading windows and improve schedule reliability on smaller parcels."),
@@ -480,18 +480,18 @@ def run(g):
       + '<section class="section"><div class="container"><div class="grid g-3">' + news_cards + '</div></div></section>'
       + '<section class="section bg-navy"><div class="container"><div class="split">'
         '<div class="reveal"><span class="eyebrow">Stay Informed</span><h2>Market updates in your inbox</h2>'
-        '<p class="lead">Subscribe for periodic crude and lubricants market commentary and Nexa Oil Trading announcements.</p>'
+        '<p class="lead">Subscribe for periodic crude and lubricants market commentary and Nexa Oil announcements.</p>'
         '<form class="btn-row" data-mock style="margin-top:10px;gap:12px;max-width:520px">'
         '<input type="email" required placeholder="Your business email" '
         'style="flex:1;min-width:220px;padding:14px 16px;border-radius:8px;border:1.5px solid rgba(255,255,255,.2);background:rgba(255,255,255,.06);color:#fff">'
         '<button class="btn btn--gold" type="submit">Subscribe</button>'
-        '<div class="form-success">Thank you — you\'re subscribed to Nexa Oil Trading market updates.</div></form></div>'
+        '<div class="form-success">Thank you — you\'re subscribed to Nexa Oil market updates.</div></form></div>'
         '<div class="split__media reveal d1" style="background-image:url(%s)"></div>'
         '</div></div></section>'
     ) % IMG["barrels"]
     news_body += cta_band()
     page("news.html","News & Market Updates",
-         "Nexa Oil Trading news and market updates — crude oil and lubricants market commentary, company announcements and logistics insight from our Dubai trading desk.",
+         "Nexa Oil news and market updates — crude oil and lubricants market commentary, company announcements and logistics insight from our Dubai trading desk.",
          news_body, "news.html")
 
     # ============================================================= QUOTE
@@ -528,12 +528,12 @@ def run(g):
         '<option>CIF — Cost, Insurance & Freight</option><option>CFR — Cost & Freight</option><option>To be advised</option></select></div>'
         '<div class="field full"><label>Message</label><textarea placeholder="Specifications, timelines or any other details..."></textarea></div>'
         '</div><div style="margin-top:24px"><button class="btn btn--gold" type="submit">Submit Request %s</button></div>'
-        '<p class="form-note">By submitting you agree to be contacted by Nexa Oil Trading regarding your enquiry. '
+        '<p class="form-note">By submitting you agree to be contacted by Nexa Oil regarding your enquiry. '
         'This is a demonstration form — no live submission is sent.</p>'
         '</form></div></div></div></section>'
     ) % (ic("mail"), opts, ic("arrow"))
     page("quote.html","Request a Quote",
-         "Request a quotation from Nexa Oil Trading for crude oil or industrial lubricants. Provide your product, quantity, delivery port and preferred Incoterm — reply within one business day.",
+         "Request a quotation from Nexa Oil for crude oil or industrial lubricants. Provide your product, quantity, delivery port and preferred Incoterm — reply within one business day.",
          quote_body, "quote.html")
 
     # ============================================================= CONTACT
@@ -543,7 +543,7 @@ def run(g):
         IMG["dubai"], "<span>Contact</span>")
       + '<section class="section"><div class="container"><div class="grid g-3" style="margin-bottom:48px">'
         '<div class="info-card reveal"><div class="ico">%s</div><div><h4>Head Office</h4>'
-        '<p>Nexa Oil Trading<br>Dubai, United Arab Emirates</p></div></div>'
+        '<p>Nexa Oil<br>Dubai, United Arab Emirates</p></div></div>'
         '<div class="info-card reveal d1"><div class="ico">%s</div><div><h4>Email</h4>'
         '<p><a href="mailto:sales@nexaoiltrading.com">sales@nexaoiltrading.com</a></p></div></div>'
         '<div class="info-card reveal d2"><div class="ico">%s</div><div><h4>Trading Hours</h4>'
@@ -564,7 +564,7 @@ def run(g):
         '<div class="reveal d1"><span class="eyebrow">Dubai, UAE</span><h2>Strategically located for global trade</h2>'
         '<p>Our position in Dubai places us within reach of the world\'s most important shipping lanes and consuming '
         'markets. Whether you are a refiner, distributor, shipping line or industrial buyer, our desk is ready to help.</p>'
-        '<div class="map-wrap" style="padding:0;margin-top:24px;min-height:300px;background-image:linear-gradient(120deg,rgba(7,21,40,.4),rgba(7,21,40,.15)),url(%s);background-size:cover;background-position:center;border-radius:14px"></div>'
+        '<div class="map-wrap" style="padding:0;margin-top:24px;min-height:300px;background-image:linear-gradient(120deg,rgba(10,10,12,.4),rgba(10,10,12,.15)),url(%s);background-size:cover;background-position:center;border-radius:14px"></div>'
         '<div class="grid g-2" style="margin-top:24px;gap:16px">'
         + feat("mail","General & Sales","sales@nexaoiltrading.com")
         + feat("pin","Visit","Dubai, United Arab Emirates")
@@ -572,7 +572,7 @@ def run(g):
         '</div></div></section>'
     ) % (ic("pin"), ic("mail"), ic("clock"), ic("arrow"), IMG["dubai"])
     page("contact.html","Contact",
-         "Contact Nexa Oil Trading in Dubai, United Arab Emirates. Email sales@nexaoiltrading.com for crude oil and industrial lubricant enquiries, quotes and partnerships.",
+         "Contact Nexa Oil in Dubai, United Arab Emirates. Email sales@nexaoiltrading.com for crude oil and industrial lubricant enquiries, quotes and partnerships.",
          contact_body, "contact.html")
 
 # accordion helper (module-level so closures above can use via name)

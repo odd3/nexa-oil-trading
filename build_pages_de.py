@@ -1,5 +1,5 @@
 # -*- coding: utf-8 -*-
-"""Deutsche Seiteninhalte für Nexa Oil Trading."""
+"""Deutsche Seiteninhalte für Nexa Oil."""
 
 L = "de"
 AP = "../"   # asset prefix für /de/
@@ -43,7 +43,7 @@ def run(g):
       '<div class="container">'
       '<span class="eyebrow reveal">Dubai · Internationaler Energiehandel</span>'
       '<h1 class="reveal d1">Antrieb für den globalen Energiehandel</h1>'
-      '<p class="lead reveal d2">Nexa Oil Trading ist ein in Dubai ansässiges internationales '
+      '<p class="lead reveal d2">Nexa Oil ist ein in Dubai ansässiges internationales '
       'Energiehandelsunternehmen, spezialisiert auf die Lieferung von hochwertigem Rohöl und '
       'Industrieschmierstoffen von vertrauenswürdigen Produzenten aus dem Nahen Osten.</p>'
       '<div class="btn-row reveal d3">'
@@ -134,19 +134,19 @@ def run(g):
 
     P("index.html",
       "Internationaler Energiehandel aus Dubai",
-      "Nexa Oil Trading ist ein in Dubai ansässiges internationales Energiehandelsunternehmen, das weltweit hochwertiges Rohöl und Industrieschmierstoffe zu FOB-, CIF- und CFR-Bedingungen liefert.",
+      "Nexa Oil ist ein in Dubai ansässiges internationales Energiehandelsunternehmen, das weltweit hochwertiges Rohöl und Industrieschmierstoffe zu FOB-, CIF- und CFR-Bedingungen liefert.",
       hero + why + stat_strip + products_overview + network + trust + cta(),
       "index.html", solid=False)
 
     # ============================================================= ÜBER UNS
     about_body = (
-      ph("Über Nexa Oil Trading","Energie, auf die sich die Welt verlässt",
+      ph("Über Nexa Oil","Energie, auf die sich die Welt verlässt",
         "Ein in Dubai ansässiger Händler, Broker und Distributor, der vertrauenswürdige Produzenten aus dem Nahen Osten mit Käufern auf fünf Kontinenten verbindet.",
         IMG["dubai"], "<span>Über uns</span>")
       + '<section class="section"><div class="container"><div class="split">'
         '<div class="reveal"><span class="eyebrow">Wer wir sind</span>'
         '<h2>Verwurzelt am Golf, weltweit aktiv</h2>'
-        '<p>Nexa Oil Trading ist ein internationales Energiehandelsunternehmen mit Sitz in Dubai, '
+        '<p>Nexa Oil ist ein internationales Energiehandelsunternehmen mit Sitz in Dubai, '
         'Vereinigte Arabische Emirate. Als Händler, Broker und Distributor sind wir auf die weltweite Lieferung '
         'von hochwertigem Rohöl und einem umfassenden Sortiment leistungsstarker Industrieschmierstoffe spezialisiert.</p>'
         '<p>Unsere Position in den VAE – an der Schnittstelle des europäischen, asiatischen und afrikanischen '
@@ -184,7 +184,7 @@ def run(g):
       + cta()
     )
     P("about.html","Über uns",
-      "Erfahren Sie mehr über Nexa Oil Trading – ein in Dubai ansässiges internationales Energiehandelsunternehmen, das vertrauenswürdige Produzenten aus dem Nahen Osten mit Käufern auf fünf Kontinenten verbindet.",
+      "Erfahren Sie mehr über Nexa Oil – ein in Dubai ansässiges internationales Energiehandelsunternehmen, das vertrauenswürdige Produzenten aus dem Nahen Osten mit Käufern auf fünf Kontinenten verbindet.",
       about_body, "about.html")
 
     # ============================================================= PRODUKTE
@@ -227,7 +227,7 @@ def run(g):
       + cta()
     )
     P("products.html","Produkte",
-      "Entdecken Sie das Portfolio von Nexa Oil Trading – hochwertiges Rohöl und Industrieschmierstoffe: Motoren-, Hydraulik-, Getriebe-, Kompressor- und Schiffsöle sowie Fette, gehandelt zu FOB, CIF und CFR.",
+      "Entdecken Sie das Portfolio von Nexa Oil – hochwertiges Rohöl und Industrieschmierstoffe: Motoren-, Hydraulik-, Getriebe-, Kompressor- und Schiffsöle sowie Fette, gehandelt zu FOB, CIF und CFR.",
       products_body, "products.html")
 
     # ============================================================= ROHÖL
@@ -237,7 +237,7 @@ def run(g):
         IMG["rig"], '<a href="products.html">Produkte</a> <span>/</span> Rohöl')
       + '<section class="section"><div class="container"><div class="split">'
         '<div class="reveal"><span class="eyebrow">Überblick</span><h2>Zuverlässige Rohöllieferung vom Golf</h2>'
-        '<p>Nexa Oil Trading handelt hochwertiges Rohöl aus dem Nahen Osten von etablierten regionalen Produzenten. '
+        '<p>Nexa Oil handelt hochwertiges Rohöl aus dem Nahen Osten von etablierten regionalen Produzenten. '
         'Unsere Ladungen versorgen Raffinerien und petrochemische Komplexe, die konstante Qualität, sichere Mengen '
         'und zuverlässige Lieferung verlangen.</p>'
         '<p>Wir strukturieren jede Transaktion rund um den bevorzugten Incoterm des Käufers – ob Verladung am '
@@ -276,7 +276,7 @@ def run(g):
       + cta()
     )
     P("crude-oil.html","Rohöl",
-      "Hochwertiges Rohöl aus dem Nahen Osten – leichte, mittlere und schwere Sorten – geliefert von Nexa Oil Trading zu FOB-, CIF- und CFR-Bedingungen für Raffinerien und Petrochemie.",
+      "Hochwertiges Rohöl aus dem Nahen Osten – leichte, mittlere und schwere Sorten – geliefert von Nexa Oil zu FOB-, CIF- und CFR-Bedingungen für Raffinerien und Petrochemie.",
       crude_body, "crude-oil.html")
 
     # ============================================================= SCHMIERSTOFFE
@@ -320,7 +320,7 @@ def run(g):
       + cta()
     )
     P("lubricants.html","Industrieschmierstoffe",
-      "Nexa Oil Trading liefert leistungsstarke Industrieschmierstoffe – Motoren-, Hydraulik-, Getriebe-, Kompressor- und Schiffsöle sowie Fette – für Industrie, Schifffahrt und schwere Anlagen weltweit.",
+      "Nexa Oil liefert leistungsstarke Industrieschmierstoffe – Motoren-, Hydraulik-, Getriebe-, Kompressor- und Schiffsöle sowie Fette – für Industrie, Schifffahrt und schwere Anlagen weltweit.",
       lub_body, "lubricants.html")
 
     # ============================================================= NETZWERK
@@ -358,7 +358,7 @@ def run(g):
       + cta()
     )
     P("global-network.html","Globales Liefernetzwerk",
-      "Entdecken Sie das globale Liefernetzwerk von Nexa Oil Trading – mit Sitz in Dubai, effizienter Logistik und internationaler Verschiffungskoordination nach Europa, Asien, Afrika und Amerika.",
+      "Entdecken Sie das globale Liefernetzwerk von Nexa Oil – mit Sitz in Dubai, effizienter Logistik und internationaler Verschiffungskoordination nach Europa, Asien, Afrika und Amerika.",
       gn_body, "global-network.html")
 
     # ============================================================= BRANCHEN
@@ -394,7 +394,7 @@ def run(g):
       + cta()
     )
     P("industries.html","Branchen, die wir beliefern",
-      "Nexa Oil Trading beliefert Öl & Gas, Schifffahrt, Fertigung, Bauwesen, Bergbau, Logistik, Energie und Schwerindustrie weltweit mit Rohöl und Industrieschmierstoffen.",
+      "Nexa Oil beliefert Öl & Gas, Schifffahrt, Fertigung, Bauwesen, Bergbau, Logistik, Energie und Schwerindustrie weltweit mit Rohöl und Industrieschmierstoffen.",
       ind_body, "industries.html")
 
     # ============================================================= QUALITÄT
@@ -428,7 +428,7 @@ def run(g):
       + cta()
     )
     P("quality.html","Qualität & Compliance",
-      "Nexa Oil Trading steht für strenge Qualität und Compliance – anerkannte Spezifikationen, vollständige Dokumentation, unabhängige Inspektion, Sanktionsprüfung und verantwortungsvollen Handel.",
+      "Nexa Oil steht für strenge Qualität und Compliance – anerkannte Spezifikationen, vollständige Dokumentation, unabhängige Inspektion, Sanktionsprüfung und verantwortungsvollen Handel.",
       q_body, "quality.html")
 
     # ============================================================= KATALOG
@@ -473,14 +473,14 @@ def run(g):
       + cta()
     )
     P("catalog.html","Katalog",
-      "Laden Sie den PDF-Katalog von Nexa Oil Trading herunter oder stöbern Sie online in den Datenblättern – technische Spezifikationen, Gebindeinformationen und Handelsbedingungen für Rohöl und Schmierstoffe.",
+      "Laden Sie den PDF-Katalog von Nexa Oil herunter oder stöbern Sie online in den Datenblättern – technische Spezifikationen, Gebindeinformationen und Handelsbedingungen für Rohöl und Schmierstoffe.",
       cat_body, "catalog.html")
 
     # ============================================================= AKTUELLES
     news = [
         (IMG["news1"],"Marktbericht","Golf-Rohöl-Differenziale ziehen an, da die asiatische Nachfrage anzieht",
          "Die Raffineriemargen in Asien festigten sich im Quartalsverlauf, was die Nachfrage nach mittleren und schweren Sorten aus dem Nahen Osten steigerte und die kurzfristige Verfügbarkeit verknappte."),
-        (IMG["news2"],"Unternehmen","Nexa Oil Trading weitet Schmierstoff-Distribution nach Westafrika aus",
+        (IMG["news2"],"Unternehmen","Nexa Oil weitet Schmierstoff-Distribution nach Westafrika aus",
          "Neue Distributorenvereinbarungen erweitern die Reichweite unserer Schiffs- und Industrieschmierstoffe in wichtigen westafrikanischen Häfen und verkürzen die Lieferzeiten für regionale Käufer."),
         (IMG["news3"],"Logistik","VAE-Hafenumschlag unterstützt schnellere Abfertigung von Teilpartien",
          "Anhaltende Investitionen in die Terminalkapazität der VAE helfen Händlern, Ladefenster zu verkürzen und die Planungssicherheit bei kleineren Partien zu verbessern."),
@@ -508,7 +508,7 @@ def run(g):
     ) % IMG["barrels"]
     news_body += cta()
     P("news.html","Aktuelles & Marktberichte",
-      "Aktuelles und Marktberichte von Nexa Oil Trading – Markt­kommentare zu Rohöl und Schmierstoffen, Unternehmensmitteilungen und Logistikeinblicke aus unserer Handelsabteilung in Dubai.",
+      "Aktuelles und Marktberichte von Nexa Oil – Markt­kommentare zu Rohöl und Schmierstoffen, Unternehmensmitteilungen und Logistikeinblicke aus unserer Handelsabteilung in Dubai.",
       news_body, "news.html")
 
     # ============================================================= ANGEBOT
@@ -545,12 +545,12 @@ def run(g):
         '<option>CIF — Kosten, Versicherung & Fracht</option><option>CFR — Kosten & Fracht</option><option>Wird mitgeteilt</option></select></div>'
         '<div class="field full"><label>Nachricht</label><textarea placeholder="Spezifikationen, Zeitpläne oder weitere Angaben..."></textarea></div>'
         '</div><div style="margin-top:24px"><button class="btn btn--gold" type="submit">Anfrage senden %s</button></div>'
-        '<p class="form-note">Mit dem Absenden erklären Sie sich damit einverstanden, von Nexa Oil Trading zu Ihrer Anfrage kontaktiert zu werden. '
+        '<p class="form-note">Mit dem Absenden erklären Sie sich damit einverstanden, von Nexa Oil zu Ihrer Anfrage kontaktiert zu werden. '
         'Dies ist ein Demonstrationsformular – es wird keine Live-Übermittlung gesendet.</p>'
         '</form></div></div></div></section>'
     ) % (ic("mail"), opts, ic("arrow"))
     P("quote.html","Angebot anfordern",
-      "Fordern Sie bei Nexa Oil Trading ein Angebot für Rohöl oder Industrieschmierstoffe an. Geben Sie Produkt, Menge, Lieferhafen und bevorzugten Incoterm an – Antwort innerhalb eines Werktags.",
+      "Fordern Sie bei Nexa Oil ein Angebot für Rohöl oder Industrieschmierstoffe an. Geben Sie Produkt, Menge, Lieferhafen und bevorzugten Incoterm an – Antwort innerhalb eines Werktags.",
       quote_body, "quote.html")
 
     # ============================================================= KONTAKT
@@ -560,7 +560,7 @@ def run(g):
         IMG["dubai"], "<span>Kontakt</span>")
       + '<section class="section"><div class="container"><div class="grid g-3" style="margin-bottom:48px">'
         '<div class="info-card reveal"><div class="ico">%s</div><div><h4>Hauptsitz</h4>'
-        '<p>Nexa Oil Trading<br>Dubai, Vereinigte Arabische Emirate</p></div></div>'
+        '<p>Nexa Oil<br>Dubai, Vereinigte Arabische Emirate</p></div></div>'
         '<div class="info-card reveal d1"><div class="ico">%s</div><div><h4>E-Mail</h4>'
         '<p><a href="mailto:sales@nexaoiltrading.com">sales@nexaoiltrading.com</a></p></div></div>'
         '<div class="info-card reveal d2"><div class="ico">%s</div><div><h4>Handelszeiten</h4>'
@@ -581,7 +581,7 @@ def run(g):
         '<div class="reveal d1"><span class="eyebrow">Dubai, VAE</span><h2>Strategisch günstig für den Welthandel</h2>'
         '<p>Unsere Lage in Dubai bringt uns in Reichweite der wichtigsten Schifffahrtsrouten und Absatzmärkte der Welt. '
         'Ob Raffinerie, Distributor, Reederei oder Industriekunde – unser Team steht für Sie bereit.</p>'
-        '<div class="map-wrap" style="padding:0;margin-top:24px;min-height:300px;background-image:linear-gradient(120deg,rgba(7,21,40,.4),rgba(7,21,40,.15)),url(%s);background-size:cover;background-position:center;border-radius:14px"></div>'
+        '<div class="map-wrap" style="padding:0;margin-top:24px;min-height:300px;background-image:linear-gradient(120deg,rgba(10,10,12,.4),rgba(10,10,12,.15)),url(%s);background-size:cover;background-position:center;border-radius:14px"></div>'
         '<div class="grid g-2" style="margin-top:24px;gap:16px">'
         + feat("mail","Allgemein & Vertrieb","sales@nexaoiltrading.com")
         + feat("pin","Besuch","Dubai, Vereinigte Arabische Emirate")
@@ -589,5 +589,5 @@ def run(g):
         '</div></div></section>'
     ) % (ic("pin"), ic("mail"), ic("clock"), ic("arrow"), IMG["dubai"])
     P("contact.html","Kontakt",
-      "Kontaktieren Sie Nexa Oil Trading in Dubai, Vereinigte Arabische Emirate. E-Mail sales@nexaoiltrading.com für Anfragen zu Rohöl und Industrieschmierstoffen, Angebote und Partnerschaften.",
+      "Kontaktieren Sie Nexa Oil in Dubai, Vereinigte Arabische Emirate. E-Mail sales@nexaoiltrading.com für Anfragen zu Rohöl und Industrieschmierstoffen, Angebote und Partnerschaften.",
       contact_body, "contact.html")

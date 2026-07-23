@@ -1,4 +1,4 @@
-# Nexa Oil Trading — Corporate Website
+# Nexa Oil — Corporate Website
 
 A premium, fully-responsive corporate website for a Dubai-based international energy
 trading company (crude oil & industrial lubricants). Static HTML/CSS/JS — no build

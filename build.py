@@ -1,5 +1,5 @@
 # -*- coding: utf-8 -*-
-"""Static site generator for Nexa Oil Trading (EN + DE)."""
+"""Static site generator for Nexa Oil (EN + DE)."""
 import os
 
 OUT = os.path.dirname(os.path.abspath(__file__))
@@ -93,7 +93,7 @@ T = {
                        ("quality.html","Quality & Compliance"),("news.html","News & Market Updates")],
     "f_product_links":[("crude-oil.html","Crude Oil"),("lubricants.html","Industrial Lubricants"),
                        ("catalog.html","Catalog"),("industries.html","Industries We Serve")],
-    "f_addr":"Nexa Oil Trading<br>Dubai, United Arab Emirates",
+    "f_addr":"Nexa Oil<br>Dubai, United Arab Emirates",
     "f_hours":"Sun &ndash; Fri, 09:00 &ndash; 18:00 GST",
     "f_about":"A Dubai-based international energy trading company specialising in the supply of premium "
               "crude oil and high-performance industrial lubricants to markets across five continents.",
@@ -121,7 +121,7 @@ T = {
                        ("quality.html","Qualität & Compliance"),("news.html","Aktuelles & Marktberichte")],
     "f_product_links":[("crude-oil.html","Rohöl"),("lubricants.html","Industrieschmierstoffe"),
                        ("catalog.html","Katalog"),("industries.html","Branchen, die wir beliefern")],
-    "f_addr":"Nexa Oil Trading<br>Dubai, Vereinigte Arabische Emirate",
+    "f_addr":"Nexa Oil<br>Dubai, Vereinigte Arabische Emirate",
     "f_hours":"So &ndash; Fr, 09:00 &ndash; 18:00 GST",
     "f_about":"Ein in Dubai ansässiges internationales Energiehandelsunternehmen, spezialisiert auf die "
               "Lieferung von hochwertigem Rohöl und leistungsstarken Industrieschmierstoffen an Märkte "
@@ -140,9 +140,9 @@ T = {
 def brand():
     return (
       '<a href="index.html" class="brand">' +
-      '<span class="brand__mark"><svg viewBox="0 0 24 24" fill="none" stroke="#071528" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3c4 5 6 8 6 11a6 6 0 0 1-12 0c0-3 2-6 6-11z"/></svg></span>' +
+      '<span class="brand__mark"><svg viewBox="0 0 24 24" fill="none" stroke="#0b0b0d" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3c4 5 6 8 6 11a6 6 0 0 1-12 0c0-3 2-6 6-11z"/></svg></span>' +
       '<span class="brand__txt"><span class="brand__name">Nexa</span>' +
-      '<span class="brand__sub">Oil&nbsp;Trading</span></span></a>'
+      '<span class="brand__sub">Oil</span></span></a>'
     )
 
 def lang_switch(lang, filename, mobile=False):
@@ -230,7 +230,7 @@ def footer(lang):
       '<footer class="footer"><div class="container">'
       '<div class="footer__top">' + about + cols + contact + '</div>'
       '<div class="footer__bottom">'
-      '<span>&copy; <span id="year">2026</span> Nexa Oil Trading. %s</span>' % t["f_rights"] +
+      '<span>&copy; <span id="year">2026</span> Nexa Oil. %s</span>' % t["f_rights"] +
       '<span>%s &nbsp;·&nbsp; <a href="quote.html">%s</a> &nbsp;·&nbsp; <a href="contact.html">%s</a></span>'
       % (t["f_bottom_loc"], t["f_quote"], t["f_contact"]) +
       '</div></div></footer>'
@@ -245,23 +245,23 @@ def page(filename, title, desc, body, active, solid=True, lang="en", asset_prefi
 '<!DOCTYPE html>\n<html lang="%s">\n<head>\n'
 '<meta charset="UTF-8">\n'
 '<meta name="viewport" content="width=device-width, initial-scale=1.0">\n'
-'<title>%s | Nexa Oil Trading</title>\n'
+'<title>%s | Nexa Oil</title>\n'
 '<meta name="description" content="%s">\n'
 '<meta name="keywords" content="oil trading Dubai, crude oil supplier UAE, industrial lubricants, energy trading company, FOB CIF CFR, Rohöl Händler, Industrieschmierstoffe, Energiehandel">\n'
-'<meta name="author" content="Nexa Oil Trading">\n'
+'<meta name="author" content="Nexa Oil">\n'
 '<meta property="og:type" content="website">\n'
-'<meta property="og:title" content="%s | Nexa Oil Trading">\n'
+'<meta property="og:title" content="%s | Nexa Oil">\n'
 '<meta property="og:description" content="%s">\n'
-'<meta property="og:site_name" content="Nexa Oil Trading">\n'
+'<meta property="og:site_name" content="Nexa Oil">\n'
 '<meta property="og:locale" content="%s">\n'
 '<link rel="alternate" hreflang="en" href="%s">\n'
 '<link rel="alternate" hreflang="de" href="%s">\n'
-'<meta name="theme-color" content="#071528">\n'
+'<meta name="theme-color" content="#0b0b0d">\n'
 '<link rel="preconnect" href="https://fonts.googleapis.com">\n'
 '<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>\n'
-'<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">\n'
+'<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">\n'
 '<link rel="stylesheet" href="%sassets/css/style.css">\n'
-'<link rel="icon" href="data:image/svg+xml,%%3Csvg xmlns=%%27http://www.w3.org/2000/svg%%27 viewBox=%%270 0 24 24%%27%%3E%%3Cpath d=%%27M12 3c4 5 6 8 6 11a6 6 0 0 1-12 0c0-3 2-6 6-11z%%27 fill=%%27%%23D4AF37%%27/%%3E%%3C/svg%%3E">\n'
+'<link rel="icon" href="data:image/svg+xml,%%3Csvg xmlns=%%27http://www.w3.org/2000/svg%%27 viewBox=%%270 0 24 24%%27%%3E%%3Cpath d=%%27M12 3c4 5 6 8 6 11a6 6 0 0 1-12 0c0-3 2-6 6-11z%%27 fill=%%27%%23FF6A00%%27/%%3E%%3C/svg%%3E">\n'
 '</head>\n<body class="%s">\n%s\n<main>\n%s\n</main>\n%s\n'
 '<script src="%sassets/js/main.js"></script>\n</body>\n</html>\n'
     ) % ("de" if lang=="de" else "en", title, desc, title, desc,
@@ -280,7 +280,7 @@ def page_hero(eyebrow, title, lead, img, crumb, lang="en"):
     home = T[lang]["home_link"]
     cb = '<div class="breadcrumb"><a href="index.html">%s</a> <span>/</span> %s</div>' % (home, crumb)
     return (
-      '<section class="page-hero" style="background-image:linear-gradient(120deg,rgba(7,21,40,.93),rgba(12,32,56,.78)),url(%s)">'
+      '<section class="page-hero" style="background-image:linear-gradient(120deg,rgba(10,10,12,.93),rgba(22,22,26,.78)),url(%s)">'
       '<div class="container"><span class="eyebrow eyebrow--center reveal">%s</span>'
       '<h1 class="reveal d1">%s</h1><p class="lead reveal d2">%s</p>%s</div></section>'
     ) % (img, eyebrow, title, lead, cb)
@@ -303,19 +303,19 @@ def world_map():
              ("Santos",330,360),("Singapore",760,290),("Shanghai",800,210),
              ("Mumbai",640,265),("Lagos",480,300),("Durban",540,390),("Tokyo",850,195)]
     routes = ""
-    dots = '<circle class="map-dot" cx="%d" cy="%d" r="7" fill="#D4AF37"/>' % dubai
-    dots += '<circle cx="%d" cy="%d" r="13" fill="none" stroke="#D4AF37" stroke-width="1.2" opacity=".5"/>' % dubai
+    dots = '<circle class="map-dot" cx="%d" cy="%d" r="7" fill="#ff6a00"/>' % dubai
+    dots += '<circle cx="%d" cy="%d" r="13" fill="none" stroke="#ff6a00" stroke-width="1.2" opacity=".5"/>' % dubai
     labels = '<text x="%d" y="%d" fill="#fff" font-size="13" font-family="Inter" font-weight="600">Dubai HQ</text>' % (dubai[0]+14, dubai[1]+4)
     for name, x, y in nodes:
         mx = (dubai[0]+x)/2
         my = min(dubai[1], y) - 50
-        routes += '<path class="map-route" d="M%d %d Q %d %d %d %d" fill="none" stroke="#D4AF37" stroke-width="1.3" opacity=".55"/>' % (dubai[0],dubai[1],mx,my,x,y)
-        dots += '<circle class="map-dot" cx="%d" cy="%d" r="4.5" fill="#E8D8B0"/>' % (x,y)
+        routes += '<path class="map-route" d="M%d %d Q %d %d %d %d" fill="none" stroke="#ff6a00" stroke-width="1.3" opacity=".55"/>' % (dubai[0],dubai[1],mx,my,x,y)
+        dots += '<circle class="map-dot" cx="%d" cy="%d" r="4.5" fill="#ffb27a"/>' % (x,y)
         labels += '<text x="%d" y="%d" fill="#AAB4C0" font-size="11" font-family="Inter">%s</text>' % (x+7,y+3,name)
     return (
       '<div class="map-wrap reveal"><svg viewBox="0 0 1000 500" role="img" aria-label="Global trading routes from Dubai">'
-      '<rect width="1000" height="500" fill="#0c2038"/>'
-      '<g fill="#16304f" stroke="#1d3c5e" stroke-width="1">'
+      '<rect width="1000" height="500" fill="#161619"/>'
+      '<g fill="#26262c" stroke="#38383f" stroke-width="1">'
       '<path d="M120 140 q60 -40 150 -20 q60 10 70 60 q-20 60 -80 80 q-90 30 -130 -20 q-30 -60 -10 -100z"/>'
       '<path d="M300 300 q40 -20 70 10 q20 60 -10 110 q-40 40 -70 0 q-20 -70 10 -120z"/>'
       '<path d="M440 110 q70 -30 140 -10 q40 20 30 70 q-30 40 -90 40 q-70 0 -90 -50 q-10 -30 10 -50z"/>'
@@ -335,25 +335,25 @@ def oil_barrel():
       '<svg viewBox="0 0 380 500" xmlns="http://www.w3.org/2000/svg">'
       '<defs>'
         '<linearGradient id="nxBody" x1="0" y1="0" x2="1" y2="0">'
-          '<stop offset="0" stop-color="#8a6818"/><stop offset="0.16" stop-color="#e9cf73"/>'
-          '<stop offset="0.46" stop-color="#d4af37"/><stop offset="0.8" stop-color="#a87f22"/>'
-          '<stop offset="1" stop-color="#7a5d16"/></linearGradient>'
+          '<stop offset="0" stop-color="#8a3500"/><stop offset="0.16" stop-color="#ffb574"/>'
+          '<stop offset="0.46" stop-color="#ff6a00"/><stop offset="0.8" stop-color="#c24e00"/>'
+          '<stop offset="1" stop-color="#7a2e00"/></linearGradient>'
         '<linearGradient id="nxLid" x1="0" y1="0" x2="1" y2="0">'
-          '<stop offset="0" stop-color="#caa436"/><stop offset="0.5" stop-color="#f3e3a5"/>'
-          '<stop offset="1" stop-color="#9a7820"/></linearGradient>'
+          '<stop offset="0" stop-color="#ff8a3d"/><stop offset="0.5" stop-color="#ffd8b0"/>'
+          '<stop offset="1" stop-color="#b34700"/></linearGradient>'
         '<linearGradient id="nxRib" x1="0" y1="0" x2="1" y2="0">'
-          '<stop offset="0" stop-color="#6f5414"/><stop offset="0.5" stop-color="#c79f30"/>'
-          '<stop offset="1" stop-color="#5f4810"/></linearGradient>'
+          '<stop offset="0" stop-color="#7a2e00"/><stop offset="0.5" stop-color="#ff6a00"/>'
+          '<stop offset="1" stop-color="#7a2e00"/></linearGradient>'
         '<linearGradient id="nxNavy" x1="0" y1="0" x2="0" y2="1">'
-          '<stop offset="0" stop-color="#102a48"/><stop offset="1" stop-color="#071528"/></linearGradient>'
+          '<stop offset="0" stop-color="#1b1b20"/><stop offset="1" stop-color="#0b0b0d"/></linearGradient>'
         '<radialGradient id="nxGlow" cx="0.5" cy="0.5" r="0.5">'
-          '<stop offset="0" stop-color="#D4AF37" stop-opacity="0.45"/>'
-          '<stop offset="0.6" stop-color="#D4AF37" stop-opacity="0.12"/>'
-          '<stop offset="1" stop-color="#D4AF37" stop-opacity="0"/></radialGradient>'
+          '<stop offset="0" stop-color="#ff6a00" stop-opacity="0.45"/>'
+          '<stop offset="0.6" stop-color="#ff6a00" stop-opacity="0.12"/>'
+          '<stop offset="1" stop-color="#ff6a00" stop-opacity="0"/></radialGradient>'
       '</defs>'
       # ambient glow + contact shadow
       '<ellipse cx="190" cy="255" rx="185" ry="205" fill="url(#nxGlow)"/>'
-      '<ellipse cx="190" cy="436" rx="126" ry="20" fill="#03070e" opacity="0.45"/>'
+      '<ellipse cx="190" cy="436" rx="126" ry="20" fill="#050506" opacity="0.45"/>'
       '<g class="barrel-body">'
         # body
         '<path d="M70 120 L70 412 A120 30 0 0 0 310 412 L310 120 Z" fill="url(#nxBody)"/>'
@@ -362,25 +362,25 @@ def oil_barrel():
         '<ellipse cx="120" cy="266" rx="6" ry="128" fill="#ffffff" opacity="0.18"/>'
         # top rib
         '<path d="M70 172 A120 26 0 0 0 310 172 L310 192 A120 26 0 0 1 70 192 Z" fill="url(#nxRib)"/>'
-        '<path d="M72 173 A118 25 0 0 0 308 173" fill="none" stroke="#f3e3a5" stroke-width="1.5" opacity="0.55"/>'
+        '<path d="M72 173 A118 25 0 0 0 308 173" fill="none" stroke="#ffd8b0" stroke-width="1.5" opacity="0.55"/>'
         # bottom rib
         '<path d="M70 345 A120 26 0 0 0 310 345 L310 365 A120 26 0 0 1 70 365 Z" fill="url(#nxRib)"/>'
-        '<path d="M72 346 A118 25 0 0 0 308 346" fill="none" stroke="#f3e3a5" stroke-width="1.5" opacity="0.55"/>'
+        '<path d="M72 346 A118 25 0 0 0 308 346" fill="none" stroke="#ffd8b0" stroke-width="1.5" opacity="0.55"/>'
         # centre label band
         '<path d="M70 240 A120 27 0 0 0 310 240 L310 304 A120 27 0 0 1 70 304 Z" '
-        'fill="url(#nxNavy)" stroke="#D4AF37" stroke-width="2.5"/>'
-        '<g transform="translate(178,244) scale(1.0)"><path d="' + drop + '" fill="#D4AF37"/></g>'
-        '<text x="190" y="296" text-anchor="middle" fill="#D4AF37" '
-        'font-family="Playfair Display, Georgia, serif" font-size="27" font-weight="700" '
+        'fill="url(#nxNavy)" stroke="#ff6a00" stroke-width="2.5"/>'
+        '<g transform="translate(178,244) scale(1.0)"><path d="' + drop + '" fill="#ff6a00"/></g>'
+        '<text x="190" y="296" text-anchor="middle" fill="#ff6a00" '
+        'font-family="Space Grotesk, Inter, sans-serif" font-size="27" font-weight="700" '
         'letter-spacing="4">NEXA</text>'
         # top lid
-        '<ellipse cx="190" cy="120" rx="120" ry="30" fill="url(#nxLid)" stroke="#7a5d16" stroke-width="2"/>'
-        '<ellipse cx="190" cy="120" rx="94" ry="22" fill="none" stroke="#9a7820" stroke-width="2"/>'
-        '<ellipse cx="150" cy="116" rx="13" ry="5.5" fill="#7a5d16"/>'
-        '<ellipse cx="150" cy="115" rx="13" ry="5.5" fill="none" stroke="#e9cf73" stroke-width="1" opacity="0.6"/>'
+        '<ellipse cx="190" cy="120" rx="120" ry="30" fill="url(#nxLid)" stroke="#7a2e00" stroke-width="2"/>'
+        '<ellipse cx="190" cy="120" rx="94" ry="22" fill="none" stroke="#b34700" stroke-width="2"/>'
+        '<ellipse cx="150" cy="116" rx="13" ry="5.5" fill="#7a2e00"/>'
+        '<ellipse cx="150" cy="115" rx="13" ry="5.5" fill="none" stroke="#ffb574" stroke-width="1" opacity="0.6"/>'
       '</g>'
       # animated drip from the bung
-      '<g class="barrel-drip"><path transform="translate(143,124) scale(0.6)" d="' + drop + '" fill="#e9cf73"/></g>'
+      '<g class="barrel-drip"><path transform="translate(143,124) scale(0.6)" d="' + drop + '" fill="#ffb574"/></g>'
       '</svg></div>'
     )
 
