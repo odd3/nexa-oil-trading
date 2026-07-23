@@ -328,24 +328,25 @@ def world_map():
     )
 
 def oil_barrel():
-    """Premium SVG oil drum for the hero, in the navy/gold brand palette."""
+    """Premium SVG oil drum for the hero: black steel body with an orange NEXA band."""
     drop = 'M12 3c4 5 6 8 6 11a6 6 0 0 1-12 0c0-3 2-6 6-11z'
     return (
       '<div class="hero-barrel" aria-hidden="true">'
       '<svg viewBox="0 0 380 500" xmlns="http://www.w3.org/2000/svg">'
       '<defs>'
         '<linearGradient id="nxBody" x1="0" y1="0" x2="1" y2="0">'
-          '<stop offset="0" stop-color="#8a3500"/><stop offset="0.16" stop-color="#ffb574"/>'
-          '<stop offset="0.46" stop-color="#ff6a00"/><stop offset="0.8" stop-color="#c24e00"/>'
-          '<stop offset="1" stop-color="#7a2e00"/></linearGradient>'
+          '<stop offset="0" stop-color="#151517"/><stop offset="0.15" stop-color="#4a4a52"/>'
+          '<stop offset="0.45" stop-color="#2b2b30"/><stop offset="0.8" stop-color="#161618"/>'
+          '<stop offset="1" stop-color="#0b0b0d"/></linearGradient>'
         '<linearGradient id="nxLid" x1="0" y1="0" x2="1" y2="0">'
-          '<stop offset="0" stop-color="#ff8a3d"/><stop offset="0.5" stop-color="#ffd8b0"/>'
-          '<stop offset="1" stop-color="#b34700"/></linearGradient>'
+          '<stop offset="0" stop-color="#3a3a41"/><stop offset="0.5" stop-color="#5a5a63"/>'
+          '<stop offset="1" stop-color="#1a1a1d"/></linearGradient>'
         '<linearGradient id="nxRib" x1="0" y1="0" x2="1" y2="0">'
-          '<stop offset="0" stop-color="#7a2e00"/><stop offset="0.5" stop-color="#ff6a00"/>'
-          '<stop offset="1" stop-color="#7a2e00"/></linearGradient>'
-        '<linearGradient id="nxNavy" x1="0" y1="0" x2="0" y2="1">'
-          '<stop offset="0" stop-color="#1b1b20"/><stop offset="1" stop-color="#0b0b0d"/></linearGradient>'
+          '<stop offset="0" stop-color="#0c0c0e"/><stop offset="0.5" stop-color="#3c3c43"/>'
+          '<stop offset="1" stop-color="#0a0a0c"/></linearGradient>'
+        '<linearGradient id="nxBand" x1="0" y1="0" x2="0" y2="1">'
+          '<stop offset="0" stop-color="#ff8a3d"/><stop offset="0.5" stop-color="#ff6a00"/>'
+          '<stop offset="1" stop-color="#e85d00"/></linearGradient>'
         '<radialGradient id="nxGlow" cx="0.5" cy="0.5" r="0.5">'
           '<stop offset="0" stop-color="#ff6a00" stop-opacity="0.45"/>'
           '<stop offset="0.6" stop-color="#ff6a00" stop-opacity="0.12"/>'
@@ -353,34 +354,34 @@ def oil_barrel():
       '</defs>'
       # ambient glow + contact shadow
       '<ellipse cx="190" cy="255" rx="185" ry="205" fill="url(#nxGlow)"/>'
-      '<ellipse cx="190" cy="436" rx="126" ry="20" fill="#050506" opacity="0.45"/>'
+      '<ellipse cx="190" cy="436" rx="126" ry="20" fill="#050506" opacity="0.5"/>'
       '<g class="barrel-body">'
-        # body
+        # black steel body
         '<path d="M70 120 L70 412 A120 30 0 0 0 310 412 L310 120 Z" fill="url(#nxBody)"/>'
         # metallic sheen
-        '<ellipse cx="120" cy="266" rx="17" ry="128" fill="#ffffff" opacity="0.13"/>'
-        '<ellipse cx="120" cy="266" rx="6" ry="128" fill="#ffffff" opacity="0.18"/>'
+        '<ellipse cx="120" cy="266" rx="17" ry="128" fill="#ffffff" opacity="0.11"/>'
+        '<ellipse cx="120" cy="266" rx="6" ry="128" fill="#ffffff" opacity="0.15"/>'
         # top rib
         '<path d="M70 172 A120 26 0 0 0 310 172 L310 192 A120 26 0 0 1 70 192 Z" fill="url(#nxRib)"/>'
-        '<path d="M72 173 A118 25 0 0 0 308 173" fill="none" stroke="#ffd8b0" stroke-width="1.5" opacity="0.55"/>'
+        '<path d="M72 173 A118 25 0 0 0 308 173" fill="none" stroke="#5a5a63" stroke-width="1.2" opacity="0.5"/>'
         # bottom rib
         '<path d="M70 345 A120 26 0 0 0 310 345 L310 365 A120 26 0 0 1 70 365 Z" fill="url(#nxRib)"/>'
-        '<path d="M72 346 A118 25 0 0 0 308 346" fill="none" stroke="#ffd8b0" stroke-width="1.5" opacity="0.55"/>'
-        # centre label band
+        '<path d="M72 346 A118 25 0 0 0 308 346" fill="none" stroke="#5a5a63" stroke-width="1.2" opacity="0.5"/>'
+        # centre ORANGE label band
         '<path d="M70 240 A120 27 0 0 0 310 240 L310 304 A120 27 0 0 1 70 304 Z" '
-        'fill="url(#nxNavy)" stroke="#ff6a00" stroke-width="2.5"/>'
-        '<g transform="translate(178,244) scale(1.0)"><path d="' + drop + '" fill="#ff6a00"/></g>'
-        '<text x="190" y="296" text-anchor="middle" fill="#ff6a00" '
+        'fill="url(#nxBand)" stroke="#c24e00" stroke-width="1.5"/>'
+        '<g transform="translate(178,244) scale(1.0)"><path d="' + drop + '" fill="#0b0b0d"/></g>'
+        '<text x="190" y="296" text-anchor="middle" fill="#0b0b0d" '
         'font-family="Space Grotesk, Inter, sans-serif" font-size="27" font-weight="700" '
         'letter-spacing="4">NEXA</text>'
-        # top lid
-        '<ellipse cx="190" cy="120" rx="120" ry="30" fill="url(#nxLid)" stroke="#7a2e00" stroke-width="2"/>'
-        '<ellipse cx="190" cy="120" rx="94" ry="22" fill="none" stroke="#b34700" stroke-width="2"/>'
-        '<ellipse cx="150" cy="116" rx="13" ry="5.5" fill="#7a2e00"/>'
-        '<ellipse cx="150" cy="115" rx="13" ry="5.5" fill="none" stroke="#ffb574" stroke-width="1" opacity="0.6"/>'
+        # top lid (dark)
+        '<ellipse cx="190" cy="120" rx="120" ry="30" fill="url(#nxLid)" stroke="#0a0a0c" stroke-width="2"/>'
+        '<ellipse cx="190" cy="120" rx="94" ry="22" fill="none" stroke="#4a4a52" stroke-width="1.5"/>'
+        '<ellipse cx="150" cy="116" rx="13" ry="5.5" fill="#0c0c0e"/>'
+        '<ellipse cx="150" cy="115" rx="13" ry="5.5" fill="none" stroke="#5a5a63" stroke-width="1" opacity="0.6"/>'
       '</g>'
       # animated drip from the bung
-      '<g class="barrel-drip"><path transform="translate(143,124) scale(0.6)" d="' + drop + '" fill="#ffb574"/></g>'
+      '<g class="barrel-drip"><path transform="translate(143,124) scale(0.6)" d="' + drop + '" fill="#ff8a3d"/></g>'
       '</svg></div>'
     )
 
